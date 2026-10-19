@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>고전압·친환경차 시험정리</title>
+<style>
+:root{--bg:#faf6f0;--card:#fff;--ink:#1a1a1a;--muted:#666;--orange:#e85d04;--must:#b91c1c;--blue:#1e3a5f;--green:#166534;--line:#e8e0d5;--chip:#fff3e0}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Noto Sans KR",sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+header{position:sticky;top:0;z-index:20;background:rgba(250,246,240,.95);border-bottom:1px solid var(--line)}
+.wrap{max-width:880px;margin:0 auto;padding:12px 16px}
+h1{font-size:1.2rem;margin:0;color:var(--blue)}.sub{font-size:.8rem;color:var(--muted);margin:4px 0 0}
+.tabs{display:flex;gap:6px;margin-top:12px;flex-wrap:wrap}
+.tab{border:1px solid var(--line);background:#fff;padding:8px 14px;border-radius:999px;font-size:.85rem;font-weight:600;cursor:pointer;color:var(--muted)}
+.tab.active{background:var(--orange);color:#fff;border-color:var(--orange)}
+.panel{display:none;padding:16px 0 48px}.panel.active{display:block}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:12px 0}
+.card h2{margin:0 0 8px;font-size:1.05rem;color:var(--orange)}
+.must{display:inline-block;background:var(--must);color:#fff;font-size:.7rem;font-weight:700;padding:2px 8px;border-radius:6px;margin-right:6px}
+ul{margin:6px 0;padding-left:1.2rem}li{margin:3px 0}
+table{width:100%;border-collapse:collapse;font-size:.85rem;margin:8px 0}th,td{border:1px solid var(--line);padding:7px 9px;text-align:left}th{background:var(--chip)}
+.q{border-left:3px solid var(--orange);padding-left:12px;margin:14px 0}
+.opts label{display:block;padding:8px 10px;margin:4px 0;border:1px solid var(--line);border-radius:8px;cursor:pointer;background:#fff}
+.opts label.correct{background:#ecfdf5;border-color:var(--green)}.opts label.wrong{background:#fef2f2;border-color:var(--must)}
+.feedback{font-size:.85rem;margin-top:6px;font-weight:600}.feedback.ok{color:var(--green)}.feedback.no{color:var(--must)}
+.btn{border:none;background:var(--blue);color:#fff;padding:8px 14px;border-radius:8px;font-weight:600;cursor:pointer}
+.chip{display:inline-block;background:var(--chip);padding:2px 8px;border-radius:6px;font-size:.75rem;font-weight:600;color:var(--orange)}
+.match-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:6px 0}
+@media(max-width:600px){.match-row{grid-template-columns:1fr}}
+select{width:100%;padding:8px;border-radius:8px;border:1px solid var(--line);font-family:inherit}
+footer{text-align:center;padding:24px;font-size:.75rem;color:var(--muted)}
+details{margin:8px 0;padding:8px;background:#fff;border:1px solid var(--line);border-radius:8px}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<h1>고전압 · 친환경차 시험정리</h1>
+<p class="sub">원문 추출 · 한눈에 요약 · 예상문제 (공개 웹 버전)</p>
+<div class="tabs">
+<button class="tab active" data-tab="original" type="button">원문 추출</button>
+<button class="tab" data-tab="summary" type="button">한눈에 요약</button>
+<button class="tab" data-tab="quiz" type="button">예상문제</button>
+</div>
+</div></header>
+<main class="wrap">
+<section id="original" class="panel active">
+<div class="card"><h2>친환경차 분류</h2>
+<ul><li><b>HEV</b> 엔진+모터, 외부충전 없음</li><li><b>PHEV</b> 플러그인</li><li><b>EV</b> 배터리 구동</li><li><b>FCEV</b> 수소 연료전지</li><li><b>BOP</b> 연료전지 주변장치</li></ul></div>
+<div class="card"><h2>고전압 안전</h2>
+<ul><li>절연 장갑·신발·매트·공구</li><li><b>주황</b> 케이블 = 고전압</li><li>인터락 · 서비스 플러그</li><li><span class="must">필출</span> 절연 매트 위 작업</li></ul></div>
+<div class="card"><h2>동력·회생</h2>
+<ul><li>배터리 → 인버터 → 모터 → 감속기 → 바퀴</li><li>회생: 모터 → 인버터 → 배터리</li></ul></div>
+<div class="card"><h2><span class="must">필출</span> 감전·안전</h2>
+<table><tr><th>전류</th><th>영향</th></tr>
+<tr><td>1 mA</td><td>감지</td></tr><tr><td>수~십 mA</td><td>고통·경련</td></tr>
+<tr><td>수십 mA↑</td><td>호흡·심장 위험</td></tr><tr><td>고전압</td><td>치명</td></tr></table></div>
+<div class="card"><h2>ICCU vs EPCU</h2>
+<ul><li><b>ICCU</b> = OBC + LDC + V2L</li><li><b>EPCU</b> = 구동 전력 (다름)</li></ul></div>
+<div class="card"><h2><span class="must">주관식 100%</span> 고전압 회로</h2>
+<table><tr><th>구성</th><th>역할</th></tr>
+<tr><td>배터리</td><td>에너지 저장</td></tr><tr><td>ICCU</td><td>충전·12V·V2L</td></tr>
+<tr><td>인버터</td><td>DC↔AC</td></tr><tr><td>모터</td><td>구동/회생</td></tr>
+<tr><td>BMS</td><td>감시·보호</td></tr><tr><td>인터락·서비스플러그</td><td>안전 차단</td></tr></table></div>
+<div class="card"><h2>12V · IG</h2>
+<ul><li>IG1 / IG2 / IG3</li><li><span class="must">손필기</span> IG3 ≈ ICU 경로</li><li>LDC → 12V</li></ul></div>
+<div class="card"><h2><span class="must">주관식 100%</span> 리튬이온 셀</h2>
+<table><tr><th>구성</th><th>역할</th></tr>
+<tr><td>양극</td><td>방전 시 Li+ 수용</td></tr><tr><td>음극</td><td>충전 시 Li+ 저장</td></tr>
+<tr><td>전해질</td><td>이온 이동</td></tr><tr><td>분리막</td><td>단락 방지</td></tr></table>
+<ul><li>충전: Li+ 양극→음극 / 방전: 반대</li></ul></div>
+<div class="card"><h2><span class="must">매칭</span> 안전 피라미드</h2>
+<table><tr><th>단계</th><th>내용</th></tr>
+<tr><td>1 셀 강건성</td><td>셀 내구성</td></tr><tr><td>2 수동 보호</td><td>퓨즈·구조</td></tr>
+<tr><td>3 능동(BMS)</td><td>감시·차단</td></tr><tr><td>4 Fail-Safe</td><td>차량 안전모드</td></tr></table></div>
+<div class="card"><h2><span class="must">계산</span> 2P6S</h2>
+<table><tr><th>항목</th><th>값</th></tr>
+<tr><td>전압</td><td>3.63×6 = <b>21.78 V</b></td></tr>
+<tr><td>용량</td><td>55.6×2 = <b>111.2 Ah</b></td></tr>
+<tr><td>에너지</td><td>약 <b>2.42 kWh</b></td></tr></table></div>
+<div class="card"><h2>BMU · 인터락 · E-GMP</h2>
+<ul><li>인터락 개방 → 고전압 차단</li><li>E-GMP: 전용 플랫폼, 언더플로어 배터리</li></ul></div>
+</section>
+<section id="summary" class="panel">
+<div class="card">
+<h2>한눈에 요약</h2>
+<p><span class="chip">차종</span> HEV · PHEV · EV · FCEV</p>
+<p><span class="chip">안전</span> 주황 · 서비스플러그 · 인터락 · 절연보호구</p>
+<p><span class="chip">흐름</span> 배터리→인버터→모터→감속기→바퀴</p>
+<p><span class="chip">ICCU</span> OBC+LDC+V2L ≠ EPCU</p>
+<p><span class="chip">리튬</span> 양극·음극·전해질·분리막</p>
+<p><span class="chip">피라미드</span> 셀강건→수동→능동(BMS)→Fail-Safe</p>
+<p><span class="chip">2P6S</span> 21.78 V · 111.2 Ah · 2.42 kWh</p>
+</div>
+</section>
+<section id="quiz" class="panel">
+<div class="card"><h2>객관식</h2>
+<div class="q" data-answer="2"><p><b>1.</b> 고전압 케이블 색?</p><div class="opts">
+<label data-i="0"><input type="radio" name="q1"/> ① 파랑</label>
+<label data-i="1"><input type="radio" name="q1"/> ② 노랑</label>
+<label data-i="2"><input type="radio" name="q1"/> ③ 주황</label>
+<label data-i="3"><input type="radio" name="q1"/> ④ 검정</label>
+</div><div class="feedback" hidden></div></div>
+<div class="q" data-answer="3"><p><b>2.</b> ICCU에 없는 것은?</p><div class="opts">
+<label data-i="0"><input type="radio" name="q2"/> ① OBC</label>
+<label data-i="1"><input type="radio" name="q2"/> ② LDC</label>
+<label data-i="2"><input type="radio" name="q2"/> ③ V2L</label>
+<label data-i="3"><input type="radio" name="q2"/> ④ 트랙션 인버터</label>
+</div><div class="feedback" hidden></div></div>
+<div class="q" data-answer="1"><p><b>3.</b> 2P6S 모듈 전압 (3.63 V 셀)?</p><div class="opts">
+<label data-i="0"><input type="radio" name="q3"/> ① 7.26 V</label>
+<label data-i="1"><input type="radio" name="q3"/> ② 21.78 V</label>
+<label data-i="2"><input type="radio" name="q3"/> ③ 43.56 V</label>
+<label data-i="3"><input type="radio" name="q3"/> ④ 111.2 V</label>
+</div><div class="feedback" hidden></div></div>
+<div class="q" data-answer="2"><p><b>4.</b> 피라미드 ‘감시·차단’ 단계?</p><div class="opts">
+<label data-i="0"><input type="radio" name="q4"/> ① 셀 강건성</label>
+<label data-i="1"><input type="radio" name="q4"/> ② 수동</label>
+<label data-i="2"><input type="radio" name="q4"/> ③ 능동(BMS)</label>
+<label data-i="3"><input type="radio" name="q4"/> ④ Fail-Safe</label>
+</div><div class="feedback" hidden></div></div>
+<div class="q" data-answer="1"><p><b>5.</b> 이온만 통과, 단락 방지?</p><div class="opts">
+<label data-i="0"><input type="radio" name="q5"/> ① 전해질</label>
+<label data-i="1"><input type="radio" name="q5"/> ② 분리막</label>
+<label data-i="2"><input type="radio" name="q5"/> ③ 집전체</label>
+<label data-i="3"><input type="radio" name="q5"/> ④ 외장캔</label>
+</div><div class="feedback" hidden></div></div>
+<div class="q" data-answer="1"><p><b>6.</b> 고전압 물리 분리 장치?</p><div class="opts">
+<label data-i="0"><input type="radio" name="q6"/> ① OBC</label>
+<label data-i="1"><input type="radio" name="q6"/> ② 서비스 플러그</label>
+<label data-i="2"><input type="radio" name="q6"/> ③ LDC</label>
+<label data-i="3"><input type="radio" name="q6"/> ④ 12V만 탈거</label>
+</div><div class="feedback" hidden></div></div>
+</div>
+<div class="card"><h2>매칭 · 피라미드</h2>
+<div id="match"></div>
+<button class="btn" type="button" id="checkMatch">채점</button>
+<div class="feedback" id="matchFb" hidden></div>
+</div>
+<div class="card"><h2>주관식 모범 답안</h2>
+<details><summary><span class="must">100%</span> 회로 요소</summary><p>배터리, ICCU, 인버터, 모터, BMS, 정션, 인터락/서비스플러그</p></details>
+<details><summary><span class="must">100%</span> 리튬 4요소</summary><p>양극·음극·전해질·분리막 / 충전 Li+→음극</p></details>
+<details><summary>피라미드 ③</summary><p>능동 보호(BMS)</p></details>
+<details><summary>2P6S</summary><p>21.78 V, 111.2 Ah, ≈2.42 kWh</p></details>
+</div>
+</section>
+</main>
+<footer>공개 웹 버전 · 탭 전환 · 문제 즉시 채점</footer>
+<script>
+document.querySelectorAll('.tab').forEach(btn=>{
+  btn.onclick=()=>{
+    document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+    document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById(btn.dataset.tab).classList.add('active');
+    scrollTo(0,0);
+  };
+});
+document.querySelectorAll('.q').forEach(q=>{
+  const ans=+q.dataset.answer;
+  q.querySelectorAll('label').forEach(lab=>{
+    lab.onclick=()=>{
+      const i=+lab.dataset.i;
+      q.querySelectorAll('label').forEach(l=>l.classList.remove('correct','wrong'));
+      const fb=q.querySelector('.feedback');
+      if(i===ans){lab.classList.add('correct');fb.hidden=0;fb.className='feedback ok';fb.textContent='정답';}
+      else{lab.classList.add('wrong');q.querySelector('label[data-i="'+ans+'"]').classList.add('correct');fb.hidden=0;fb.className='feedback no';fb.textContent='오답 — 초록이 정답';}
+    };
+  });
+});
+const pairs=[
+ {id:'A',left:'A. 셀 강건성',opts:['3. 셀 내구성','1. 차량 안전모드','2. BMS 감시','4. 퓨즈·구조'],c:0},
+ {id:'B',left:'B. 수동 보호',opts:['4. 퓨즈·구조','1. 차량 안전모드','2. BMS 감시','3. 셀 내구성'],c:0},
+ {id:'C',left:'C. 능동(BMS)',opts:['2. BMS 감시','1. 차량 안전모드','3. 셀 내구성','4. 퓨즈·구조'],c:0},
+ {id:'D',left:'D. Fail-Safe',opts:['1. 차량 안전모드','2. BMS 감시','3. 셀 내구성','4. 퓨즈·구조'],c:0},
+];
+const m=document.getElementById('match');
+pairs.forEach(p=>{
+  const d=document.createElement('div');d.className='match-row';
+  d.innerHTML='<div style="padding:8px;border:1px solid #e8e0d5;border-radius:8px;font-weight:600">'+p.left+'</div><select data-id="'+p.id+'">'+p.opts.map((t,i)=>'<option value="'+i+'">'+t+'</option>').join('')+'</select>';
+  m.appendChild(d);
+});
+document.getElementById('checkMatch').onclick=()=>{
+  let ok=0;pairs.forEach(p=>{if(+m.querySelector('select[data-id="'+p.id+'"]').value===p.c)ok++});
+  const fb=document.getElementById('matchFb');fb.hidden=0;
+  fb.className='feedback '+(ok===4?'ok':'no');
+  fb.textContent=ok===4?'전부 정답 (A-3 B-4 C-2 D-1)':ok+'/4 — 정답 A-3 B-4 C-2 D-1';
+};
+</script>
+</body>
+</html>
